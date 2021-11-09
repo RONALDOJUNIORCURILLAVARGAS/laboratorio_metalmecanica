@@ -3,7 +3,6 @@
 //$userSession=new UserSession();
 session_start();
 
-
 if(isset($_SESSION['estado']) )
 {
    header('location:./views/principal.php');
@@ -13,4 +12,6 @@ else{
   header('location:./views/login.php');
 }
 
+
 ?>
+
