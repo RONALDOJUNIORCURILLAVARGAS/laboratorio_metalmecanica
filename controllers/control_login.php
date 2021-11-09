@@ -14,6 +14,7 @@ $lista=$objususarioDAO->IngresarUsuario($objususarioBEAN);
             /*Asignamos el estado a la sesion estado*/
             $_SESSION['estado']=false;   
             header('location:../views/login.php');
+<<<<<<< HEAD
             break;
     }
     else {
@@ -21,4 +22,13 @@ $lista=$objususarioDAO->IngresarUsuario($objususarioBEAN);
             header('location:../views/principal.php');
             break;
     }
+=======
+        
+    }
+    
+            $_SESSION['estado']=true;
+            header('location:../views/principal.php');
+       
+    
+>>>>>>> 1d84fa74443cd5ebeb8f73bcbe45a8d1805f73b6
 ?>

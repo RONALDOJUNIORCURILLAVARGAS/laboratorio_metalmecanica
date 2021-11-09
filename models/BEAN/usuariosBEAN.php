@@ -38,7 +38,11 @@ class usuariosBEAN {
    public function setCORREO($CORREO): void {
     $this->CORREO = $CORREO;
    }
+<<<<<<< HEAD
    PASS
+=======
+   
+>>>>>>> 1d84fa74443cd5ebeb8f73bcbe45a8d1805f73b6
    public function getPASS() {
        return $this->PASS;
    }
