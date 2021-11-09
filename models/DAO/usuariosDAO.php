@@ -1,6 +1,6 @@
 <?php
-require_once '../utils/conexionBD.php'; 
-require_once '../BEAN/usuariosBEAN.php'; 
+require_once '../models/utils/conexionBD.php'; 
+require_once '../models/BEAN/usuariosBEAN.php'; 
 class usuariosDAO {
 
     public function IngresarUsuario(usuariosBEAN $objPersonaBean) {

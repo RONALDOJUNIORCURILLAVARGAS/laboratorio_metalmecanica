@@ -38,7 +38,7 @@ class usuariosBEAN {
    public function setCORREO($CORREO): void {
     $this->CORREO = $CORREO;
    }
-   PASS
+   
    public function getPASS() {
        return $this->PASS;
    }
