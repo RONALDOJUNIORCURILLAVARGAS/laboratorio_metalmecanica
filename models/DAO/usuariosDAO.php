@@ -5,7 +5,7 @@ class usuariosDAO {
 
     public function IngresarUsuario(usuariosBEAN $objPersonaBean) {
         try{
-            $sql="SELECT * FROM USUARIO WHERE CORREO_USUARIO='$objPersonaBean->CORREO'  AND  PASSWORD_USUARIO='$objPersonaBean->PASS' ; ";
+            $sql="SELECT * FROM USUARIO WHERE CORREO='$objPersonaBean->CORREO'  AND  PASS='$objPersonaBean->PASS' ; ";
             $objc=new conexionBD();
             $cn=$objc->getConexionBD();
             $rs=mysqli_query($cn,$sql);
