@@ -1,8 +1,16 @@
 <?php 
-if(isset($_SESSION['estado']) )
+session_start();
+if(isset($_SESSION['estado']))
 {
-   unset($_SESSION['estado']);
+    
+    if(isset($_SESSION['lista_usuario']))
+    {
+        header('location:../views/principal.php');
+    //unset($_SESSION['lista_usuario']);
+    } 
+ 
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -49,6 +57,7 @@ table { border: 1px solid black
  </style>   
 <body>
 <form name="form">
+<input type="hidden" name="op">
     <div class="container">
         <div class="row">
             <img src="../src/images/login.jpg" align="right" style="width: 50%" height="750p">
