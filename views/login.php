@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link href="../src/styles/login.css" rel="stylesheet" type="text/css"/>
 </head>
 <style type="text/css">
 table { border: 1px solid black 
@@ -42,8 +43,8 @@ table { border: 1px solid black
     
     <div class="container">
         <div class="row">
-            <img src="test.jpg" align="right" style="width: 50%" height="720">
-            <font color="435853" face="Georgia" size="5">
+            <img src="../src/images/login.jpg" align="right" style="width: 50%" height="750p">
+            <font color="435853" face="Georgia" size="5" >
              <li></li>
              <li></li>  
              <li></li>  
