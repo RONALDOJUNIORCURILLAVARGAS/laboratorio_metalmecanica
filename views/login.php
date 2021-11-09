@@ -1,3 +1,18 @@
+<?php 
+session_start();
+if(isset($_SESSION['estado']))
+{
+    
+    if(isset($_SESSION['lista_usuario']))
+    {
+        header('location:../views/principal.php');
+    //unset($_SESSION['lista_usuario']);
+    } 
+ 
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +57,7 @@ table { border: 1px solid black
  </style>   
 <body>
 <form name="form">
+<input type="hidden" name="op">
     <div class="container">
         <div class="row">
             <img src="../src/images/login.jpg" align="right" style="width: 50%" height="750p">
@@ -64,7 +80,7 @@ table { border: 1px solid black
                 <tr>    
                     <td>Contraseña</td></tr>
                     <tr>
-                <td><input type="password" class="sinborde" name="contraseña" style="width: 97%"></td>
+                <td><input type="password" class="sinborde" name="clave" style="width: 97%"></td>
                 </tr>  
                      
                 </table>
