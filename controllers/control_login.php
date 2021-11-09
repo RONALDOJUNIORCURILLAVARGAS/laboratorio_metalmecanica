@@ -19,6 +19,7 @@ $lista=$objususarioDAO->IngresarUsuario($objususarioBEAN);
     }
     else{
             $_SESSION['estado']=false;
+            $_SESSION['lista_usuario']=$lista;
             header('location:../views/principal.php');
     }
     
