@@ -71,7 +71,7 @@ table { border: 1px solid black
                 <tr>    
                     <td>Contraseña</td></tr>
                     <tr>
-                <td><input type="password" class="sinborde" name="contraseña" style="width: 97%"></td>
+                <td><input type="password" class="sinborde" name="clave" style="width: 97%"></td>
                 </tr>  
                      
                 </table>

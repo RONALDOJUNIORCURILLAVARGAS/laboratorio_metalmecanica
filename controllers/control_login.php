@@ -17,9 +17,12 @@ $lista=$objususarioDAO->IngresarUsuario($objususarioBEAN);
          
         
     }
-    
+    else{
             $_SESSION['estado']=false;
             header('location:../views/principal.php');
+    }
+    
+            
           
     
 ?>
