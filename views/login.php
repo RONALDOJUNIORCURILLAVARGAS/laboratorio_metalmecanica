@@ -1,3 +1,10 @@
+<?php 
+if(isset($_SESSION['estado']) )
+{
+   unset($_SESSION['estado']);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
