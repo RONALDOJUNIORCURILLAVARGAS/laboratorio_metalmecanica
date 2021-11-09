@@ -1,8 +1,4 @@
 <?php
-<<<<<<< HEAD
-echo 'Principal';
-?>
-=======
  session_start();
  if(isset($_SESSION['estado']))
  {
@@ -73,4 +69,3 @@ echo 'Principal';
               
 </body>
 </html>
->>>>>>> 1d897ce49fe5b8ca91a9dc7cc4c6579561fca0a6
