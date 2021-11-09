@@ -17,9 +17,11 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">METALAB</a>
+    <div style="width: 100px; height:20px;"></div>
+    <img src="../src/images/icon.jpeg" width="20" height="20"/>
+    <a class="navbar-brand" href="#"><h4 style="margin:0;">METALAB</h3></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
