@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link href="../src/styles/login.css" rel="stylesheet" type="text/css"/>
+    <script src="../src/javascript/acceso_login.js"></script>
 </head>
 <style type="text/css">
 table { border: 1px solid black 
@@ -40,7 +41,7 @@ table { border: 1px solid black
 }    
  </style>   
 <body>
-    
+<form name="form">
     <div class="container">
         <div class="row">
             <img src="../src/images/login.jpg" align="right" style="width: 50%" height="750p">
@@ -56,14 +57,14 @@ table { border: 1px solid black
             <p> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;laboratorio de Metalmecánica</p></font></blockquote>
            <br></br><table style="width: 20%">
                 <tr>    
-                    <td>Correo Electronico</td></tr>
-                    <tr>
-                <td><input type="text" class="sinborde" name="correo" style="width: 97%"></td>
+                    <td>Correo Electronico</td>
+              
+                    <td><input type="text" class="sinborde" name="correo" style="width: 97%"></td>
                 </tr>
                 <tr>    
                     <td>Contraseña</td></tr>
                     <tr>
-                <td><input type="text" class="sinborde" name="contraseña" style="width: 97%"></td>
+                <td><input type="password" class="sinborde" name="contraseña" style="width: 97%"></td>
                 </tr>  
                      
                 </table>
@@ -75,11 +76,11 @@ table { border: 1px solid black
                 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" style="background-color:rgb(255, 255, 255)">¿Eres nuevo?</button>
                 <br></br>
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="button" href="#">Acceder</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="button" onclick="acceder()" >Acceder</a>
                 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="button" href="#">Registrarse</a>
         </div>
     </div>
-   
+</form>
 </body>
 </html>
 
