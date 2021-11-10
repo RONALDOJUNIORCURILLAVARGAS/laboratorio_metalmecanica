@@ -1,0 +1,80 @@
+.proyectos{
+    width: 100%;
+    height: 20rem;
+    padding-top: 2rem;
+}
+.proyectos_card{
+    max-width: 80%;
+    min-width: 100px;
+    height: 17.5rem;
+    background-color:  rgba(0, 0, 0, 0.06); 
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#add_project{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+#carrusel_project{
+    width: 100%;
+    height: 12rem;
+    margin-top: 1rem;
+    padding-top: 0rem;
+}
+#car_caj_p{
+    display:flex;  
+    list-style:none;
+}
+.caja_projects{
+    width: 10rem;
+    height: 12rem;
+    background-color: #4B4B4B; 
+    
+    margin-top: 0rem;
+    margin-left: auto;
+    margin-right: auto;    
+    cursor: pointer;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 0.9rem;
+}
+.videos{
+    width: 100%;
+    height: 20rem;
+    
+}
+.videos_card{
+    max-width: 80%;
+    height: 17.5rem;
+    background-color:  rgba(0, 0, 0, 0.06); 
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+#head_card_vid{
+    width: 100%;
+    height: 3rem;
+    
+    text-align: center;
+    font-size: 2rem;
+}
+#carrusel_videos{
+    width: 100%;
+    height: 12.5rem;
+   
+  
+}
+#car_caj_v{
+    display:flex;  
+    list-style:none;
+}
+.caja_videos{
+    width: 16rem;
+    height: 14rem;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+}
