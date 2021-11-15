@@ -78,7 +78,7 @@
             <span class="title_project">Soldadura</span>
 
           </li>
-          <li class="caja_projects">
+          <li class="caja_projects" onclick="window.location.href = './modulo_cortado.php'; " >
           <img src="../src/images/cortado.jpeg"   style="width:10rem; height:10rem"/>
           <span class="title_project">Cortado de tubería</span>
           </li>
