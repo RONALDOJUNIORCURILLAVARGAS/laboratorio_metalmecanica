@@ -10,6 +10,6 @@ else{
   //require_once './views/acceso.php';  
   header('location:./views/login.php');
 }
-echo 'GOLA';
+echo 'asfasf';
 ?>
 
