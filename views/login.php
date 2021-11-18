@@ -10,8 +10,6 @@ if(isset($_SESSION['estado']))
     } 
  
 }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,72 +26,137 @@ if(isset($_SESSION['estado']))
 table { border: 1px solid black 
     }
 .sinborde {border:0;}
-.button {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 12px 24px;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    background: #ffffff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
-    background: -moz-linear-gradient(top, #ffffff, #ffffff);
-    background: linear-gradient(to bottom, #ffffff, #ffffff);
-    font: normal normal bold 20px arial;
-    color: #111111;
-    text-decoration: none;
+.button{text-decoration:none; text-align:center; 
+ padding:11px 32px; 
+ border:solid 1px #000000; 
+ -webkit-border-radius:6px;
+ -moz-border-radius:6px; 
+ border-radius: 6px; 
+ font:15px "Arial Black", Gadget, sans-serif; 
+ font-weight:bold; 
+ color:#093b3b; 
+ background:#ffffff; 
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #400000;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000;  
+  
+  }.button:hover{
+ padding:11px 32px; 
+ border:solid 1px #000000; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:21px "Arial Black", Gadget, sans-serif; 
+ font-weight:bold; 
+ color:#093b3b; 
+ background-color:#3BA4C7; 
+ background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #400000;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000;  
+  
+ }.button:active{
+ padding:11px 32px; 
+ border:solid 1px #000000; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:21px "Arial Black", Gadget, sans-serif; 
+ font-weight:bold; 
+ color:#093b3b; 
+ background-color:#3BA4C7; 
+ background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #400000;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000;  
+  
+ }
+
+ .button2{text-decoration:none; text-align:center; 
+ padding:0px 35px; 
+ border:none; 
+  
+ font:11px Verdana, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#000505; 
+ background:#ffffff; 
+ -webkit-box-shadow:0px 0px -20px #ffffff, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px -20px #ffffff,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px -20px #ffffff, inset 0px 0px 1px #ffffff;  
+  
+  }.button:hover2{
+ padding:11px 32px; 
+ border:solid 1px #ffffff; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:14px Verdana, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background:#ffffff; 
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+ }.button:active2{
+ padding:11px 32px; 
+ border:solid 1px #ffffff; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:14px Verdana, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background:#ffffff; 
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+ }
+
+.login {
+  margin:0 auto;
+  max-width:500px;
 }
-.button:hover,
-.button:focus {
-    color: #111111;
-    text-decoration: none;
-}
-.button:active {
-    background: #b3b3b3;
-    background: -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#ffffff));
-    background: -moz-linear-gradient(top, #b3b3b3, #ffffff);
-    background: linear-gradient(to bottom, #b3b3b3, #ffffff);
-}    
  </style>   
 <body>
 <form name="form">
 <input type="hidden" name="op">
     <div class="container">
         <div class="row">
-            <img src="../src/images/login.jpg" align="right" style="width: 50%" height="750p">
+            <img src="../src/images/login.jpg" align="right" style="width: 50%" height="700p">
+            <img src="../src/images/indus.jpg" align="center" style="width: 50%" height="700p">
             <font color="435853" face="Georgia" size="5" >
              <li></li>
              <li></li>  
              <li></li>  
              <li></li> 
              <blockquote>  
-                 
-            <p> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Desarrollo del proceso de</p>
-            <p> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;mecanizado de metales del</p>
-            <p> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;laboratorio de Metalmecánica</p></font></blockquote>
-           <br></br><table style="width: 20%">
-                <tr>    
-                    <td>Correo Electronico</td>
-              
-                    <td><input type="text" class="sinborde" name="correo" style="width: 97%"></td>
-                </tr>
-                <tr>    
-                    <td>Contraseña</td></tr>
-                    <tr>
-                <td><input type="password" class="sinborde" name="clave" style="width: 97%"></td>
-                </tr>  
-                     
-                </table>
+                
+            <p style= "margin-top: -756px; margin-left: 80px;" > Desarrollo del proceso de</p>
+            <p style= "margin-left: 80px;"> mecanizado de metales del</p>
+            <p style= "margin-left: 80px;"> laboratorio de Metalmecánica</p></font></blockquote>
+            <input type="text" name="correo" style="width: 27%; margin-left: 100px;" class="login" border: 2px; border-heigh solid; placeholder="Correo Electronico"> 
+            <input type="password" border: 2px solid name="clave" style="width: 27%; margin-left: 100px;" placeholder="Contraseña">
                 <br></br>
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" style="background-color:rgb(255, 255, 255)">Recuerdame</button>
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" style="background-color:rgb(255, 255, 255)">¿Olvidaste tu contraseña?</button> 
+                <a href="#" class="button2" style="margin-left: 92px;"/>Recuerdame</a>
+                <a href="#" class="button2" style="margin-left: 120px;"/>¿Olvidaste tu contraseña?</a>
                 <br></br>
                 <br></br>
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" style="background-color:rgb(255, 255, 255)">¿Eres nuevo?</button>
+                <a href="#" class="button2" style="margin-left: 400px;"/>Eres nuevo</a>
                 <br></br>
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="button" onclick="acceder()" >Acceder</a>
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="button" href="#">Registrarse</a>
+                <a href="#" style="margin-left: 110px;" class="button"/>Acceder</a>
+                &nbsp;<a class="button" href="#" style="margin-left: 140px;">Registrarse</a>
         </div>
     </div>
 </form>
