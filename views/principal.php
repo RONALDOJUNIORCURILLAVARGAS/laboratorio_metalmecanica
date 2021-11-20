@@ -3,6 +3,10 @@
  if(isset($_SESSION['estado']))
  {
     $lista_usuario=$_SESSION['lista_usuario'];
+
+    if(isset($_SESSION['lista_proyectos'])){
+      $lista_proyectos=$_SESSION['lista_proyectos'];
+    }
     //unset($_SESSION['estado']);
  }
  else{
@@ -67,26 +71,43 @@
     <div class="proyectos_card">
     <button type="button" class="btn btn-secondary" id="add_project">Nuevo proyecto</button>
     <div id="carrusel_project">
+     
         <ul id="car_caj_p">
-          <li class="caja_projects">  
-
+          <?php if(isset($lista_proyectos)){
+                foreach ($lista_proyectos as $value) {  
+                    if($value['nombre_proyecto']=='Cortado de tuberia'){ ?>
+                     <li class="caja_projects" onclick="acceder_proyecto();" >
+                    <img src="../src/images/cortado.jpeg"    style="width:10rem; height:10rem"/>
+                    <span class="title_project" > <?php echo $value['nombre_proyecto']; ?> </span>
+                    </li>
+                   <?php  }  
+                  else if($value['nombre_proyecto']=='Diseño de proyectos'){ ?>
+                  <li class="caja_projects">
+                  <img src="../src/images/diseño.jpeg"   style="width:10rem; height:10rem"/>
+                  <span class="title_project"> <?php echo $value['nombre_proyecto']; ?> </span>
+                  </li> 
+                <?php 
+                }   } }  ?>
+              
+          <li class="caja_projects">
           <img src="../src/images/diseño.jpeg"   style="width:10rem; height:10rem"/>
           <span class="title_project">Diseño de proyectos</span>
           </li>
+
           <li class="caja_projects">
             <img src="../src/images/soldadura.jpeg"   style="width:10rem; height:10rem"/>
             <span class="title_project">Soldadura</span>
+          </li>
 
-          </li>
-          <li class="caja_projects" onclick="window.location.href = './modulo_cortado.php'; " >
-          <img src="../src/images/cortado.jpeg"   style="width:10rem; height:10rem"/>
-          <span class="title_project">Cortado de tubería</span>
-          </li>
+
+
           <li class="caja_projects">
           <img src="../src/images/doblado.jpeg"   style="width:10rem; height:10rem"/>
           <span class="title_project">Doblado de tuberia</span>
           </li>
+
         </ul>
+      
     </div>
     </div>
 </div>
@@ -124,6 +145,12 @@
     <h2 ><?php echo $value['nombre'],' ',$value['apellido'] ;?></h2>
   
     <?php } ?>
+
+    <?php if(isset($lista_proyectos)){foreach ($lista_proyectos as $value) { ?>
+      <h2 ><?php echo $value['nombre_proyecto'],' ',$value['correo'] ;?></h2>
+    
+    <?php } } ?>
+
               
 </body>
 </html>

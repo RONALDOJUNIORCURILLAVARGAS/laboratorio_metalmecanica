@@ -155,7 +155,7 @@ table { border: 1px solid black
                 <br></br>
                 <a href="#" class="button2" style="margin-left: 400px;"/>Eres nuevo</a>
                 <br></br>
-                <a href="#" style="margin-left: 110px;" class="button"/>Acceder</a>
+                <a href="#" style="margin-left: 110px;" class="button" onclick="acceder();" />Acceder</a>
                 &nbsp;<a class="button" href="#" style="margin-left: 140px;">Registrarse</a>
         </div>
     </div>
