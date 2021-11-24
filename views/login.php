@@ -11,8 +11,9 @@ if(isset($_SESSION['estado']))
  
 }
 ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     
     <meta charset="UTF-8">
@@ -21,144 +22,64 @@ if(isset($_SESSION['estado']))
     <title>Inicio</title>
     <link href="../src/styles/login.css" rel="stylesheet" type="text/css"/>
     <script src="../src/javascript/acceso_login.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    
 </head>
-<style type="text/css">
-table { border: 1px solid black 
-    }
-.sinborde {border:0;}
-.button{text-decoration:none; text-align:center; 
- padding:11px 32px; 
- border:solid 1px #000000; 
- -webkit-border-radius:6px;
- -moz-border-radius:6px; 
- border-radius: 6px; 
- font:15px "Arial Black", Gadget, sans-serif; 
- font-weight:bold; 
- color:#093b3b; 
- background:#ffffff; 
- -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000; 
- -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #400000;  
- box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000;  
-  
-  }.button:hover{
- padding:11px 32px; 
- border:solid 1px #000000; 
- -webkit-border-radius:4px;
- -moz-border-radius:4px; 
- border-radius: 4px; 
- font:21px "Arial Black", Gadget, sans-serif; 
- font-weight:bold; 
- color:#093b3b; 
- background-color:#3BA4C7; 
- background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
- background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
- background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
- background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
- background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
- -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000; 
- -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #400000;  
- box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000;  
-  
- }.button:active{
- padding:11px 32px; 
- border:solid 1px #000000; 
- -webkit-border-radius:4px;
- -moz-border-radius:4px; 
- border-radius: 4px; 
- font:21px "Arial Black", Gadget, sans-serif; 
- font-weight:bold; 
- color:#093b3b; 
- background-color:#3BA4C7; 
- background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
- background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
- background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
- background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
- background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
- -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000; 
- -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #400000;  
- box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #400000;  
-  
- }
-
- .button2{text-decoration:none; text-align:center; 
- padding:0px 35px; 
- border:none; 
-  
- font:11px Verdana, Geneva, sans-serif; 
- font-weight:bold; 
- color:#000505; 
- background:#ffffff; 
- -webkit-box-shadow:0px 0px -20px #ffffff, inset 0px 0px 1px #ffffff; 
- -moz-box-shadow: 0px 0px -20px #ffffff,  inset 0px 0px 1px #ffffff;  
- box-shadow:0px 0px -20px #ffffff, inset 0px 0px 1px #ffffff;  
-  
-  }.button:hover2{
- padding:11px 32px; 
- border:solid 1px #ffffff; 
- -webkit-border-radius:4px;
- -moz-border-radius:4px; 
- border-radius: 4px; 
- font:14px Verdana, Geneva, sans-serif; 
- font-weight:bold; 
- color:#E5FFFF; 
- background:#ffffff; 
- -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
- -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
- box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
-  
- }.button:active2{
- padding:11px 32px; 
- border:solid 1px #ffffff; 
- -webkit-border-radius:4px;
- -moz-border-radius:4px; 
- border-radius: 4px; 
- font:14px Verdana, Geneva, sans-serif; 
- font-weight:bold; 
- color:#E5FFFF; 
- background:#ffffff; 
- -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
- -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
- box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
-  
- }
-
-.login {
-  margin:0 auto;
-  max-width:500px;
-}
- </style>   
 <body>
+    
 <form name="form">
 <input type="hidden" name="op">
-    <div class="container">
-        <div class="row">
-            <img src="../src/images/login.jpg" align="right" style="width: 50%" height="700p">
-            <img src="../src/images/indus.jpg" align="center" style="width: 50%" height="700p">
-            <font color="435853" face="Georgia" size="5" >
-             <li></li>
-             <li></li>  
-             <li></li>  
-             <li></li> 
-             <blockquote>  
-                
-            <p style= "margin-top: -756px; margin-left: 80px;" > Desarrollo del proceso de</p>
-            <p style= "margin-left: 80px;"> mecanizado de metales del</p>
-            <p style= "margin-left: 80px;"> laboratorio de Metalmecánica</p></font></blockquote>
-            <input type="text" name="correo" style="width: 27%; margin-left: 100px;" class="login" border: 2px; border-heigh solid; placeholder="Correo Electronico"> 
-            <input type="password" border: 2px solid name="clave" style="width: 27%; margin-left: 100px;" placeholder="Contraseña">
-                <br></br>
-                <a href="#" class="button2" style="margin-left: 92px;"/>Recuerdame</a>
-                <a href="#" class="button2" style="margin-left: 120px;"/>¿Olvidaste tu contraseña?</a>
-                <br></br>
-                <br></br>
-                <a href="#" class="button2" style="margin-left: 400px;"/>Eres nuevo</a>
-                <br></br>
-                <a href="#" style="margin-left: 110px;" class="button" onclick="acceder();" />Acceder</a>
-                &nbsp;<a class="button" href="#" style="margin-left: 140px;">Registrarse</a>
-        </div>
+  <div id="container_left">
+      
+    <div id="title">
+      <img src="../src/images/icono.jpeg" style="width:1.5rem;height:1.5rem;"><span>Metalab</span>
     </div>
+    <div id="title_2">
+    <span>Desarrollo del proceso de mecanizado de metales del laboratorio Metalmecánica</span>
+    </div>
+    <div id="registros">
+        <div id="form_usuario">
+                <div class="form-floating mb-3">
+                <input type="email" class="form-control" name="correo" id="floatingInput" placeholder="example@unfv.edu.pe">
+                <label for="floatingInput">Correo institucional</label>
+                </div>
+                <div class="form-floating">
+                <input type="password" class="form-control" name="clave" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Contraseña</label>
+             </div>
+        </div>
+        <div id="botones">
+            <div id="t_botones">
+                <span >¿Eres nuevo?</span>
+            </div>
+            <div id="b_botones" >
+                <div id="caja_btn_acceder">
+                    <button id="btn_acceder" onclick="acceder();">
+                       ACCEDER
+                    </button>
+                </div>
+                <div id="caja_btn_registrar">
+                    <button id="btn_registrar">
+                       REGISTRARSE
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+       
+    </div>
+  </div>
+
+    <div id="imagen_rigth">
+    <img src="../src/images/login.jpg" style="width:100%;height:100%;"/>
+
+    </div>
+   
 </form>
 </body>
 </html>
