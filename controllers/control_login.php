@@ -59,6 +59,9 @@ switch ($op) {
                 }
                 header('Location:../');
                 break;
+        case 3:
+                header('Location:../views/registrar.php');
+                break;
 }
 
     
