@@ -71,7 +71,7 @@ if(isset($_SESSION['estado']))
             </div>
             <div id="b_botones" >
                 <div id="caja_btn_acceder">
-                    <button id="btn_acceder" onclick="registrar();">
+                    <button id="btn_acceder" onclick="registro();">
                        REGISTRARSE
                     </button>
                 </div>
