@@ -10,6 +10,10 @@ if(isset($_SESSION['estado']))
     } 
  
 }
+if(isset($_SESSION['estado_reg'])){
+    echo "<script>alert('El correo ya se encuentra registrado');</script>";
+    unset($_SESSION['estado_reg']);
+}
 ?>
 
 <!DOCTYPE html>
