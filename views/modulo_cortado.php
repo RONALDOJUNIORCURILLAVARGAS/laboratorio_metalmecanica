@@ -48,6 +48,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="../src/javascript/modulo_cortado.js"></script>
+    <script src="../src/javascript/inicio.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -104,13 +105,19 @@
                  <hr  style="width: 80%; ">
             </div>
             <div id="run_simulador">
-
+                <div id="s_material">
+                                <?php
+                                if(isset($_SESSION['grafico_material'])){
+                                    echo $_SESSION['grafico_material'];
+                                }
+                                ?>
+                </div>
             </div>
             <div align="center" >
                  <hr  style="width: 80%; ">
             </div>
             <div id="btn_guardar_p" style="text-align:center;">
-                <button id ="btn_guardar" onclick="alert('Guardar proyectoi');" style="width:15rem;height:5rem; border-radius:12px;background-color:#020202; color:white;margin-left:auto;margin-right:auto;">Guardar</button>
+                <button id ="btn_guardar" onclick="guardarproyecto(<?php if(isset($_SESSION['grafico_material'])){echo  '`'.$_SESSION['grafico_material'].'`';}else{ echo 1;} ?> , <?php   if(isset($_SESSION['lista_proyectos'])){ foreach ($lista_proyectos as $value) { echo $value['id_proyecto'];  }  } else {echo 0;} ?>);" style="width:15rem;height:5rem; border-radius:12px;background-color:#020202; color:white;margin-left:auto;margin-right:auto;">Guardar</button>
             </div>
         </div>
         <div class="vl"></div>
@@ -141,7 +148,7 @@
                                     ?>
                                     <tr class="tb_filas">
                                     <td><?php echo $value['nombre_dimensiones']; ?></td>
-                                    <td><input type="number" value="<?php echo $value['valor_dimensiones']; ?>"/></td>
+                                    <td><input type="number" id="valor_dimensiones" value="<?php echo $value['valor_dimensiones']; ?>"/></td>
                                     <td>
                                         <select class="btn btn-secondary " role="group" aria-labelledby="btnGroupDrop1">
                                             <option class="dropdown-item" value="1"><?php echo $value['unidad_dimensiones'];?></option> 
@@ -185,7 +192,7 @@
                                     ?>
                                     <tr class="tb_filas">
                                     <td><?php echo $value['punto_referencia_configherramienta']; ?></td>
-                                    <td><input type="number" value="<?php echo $value['valor_configherramienta']; ?>"/></td>
+                                    <td><input type="number" id="valor_config_herramienta" value="<?php echo $value['valor_configherramienta']; ?>"/></td>
                                     <td>
                                         <select class="btn btn-secondary " role="group" aria-labelledby="btnGroupDrop1">
                                             <option class="dropdown-item" value="1"><?php echo $value['unidad__configherramienta'];?></option> 
@@ -196,7 +203,7 @@
                                     <?php  } }  ?>
                     </table>  
                     <div style="text-align:center;">
-                    <button  onclick="alert('actualizar configuracione');" style="width:15rem;height:3rem; border-radius:12px;background-color:#020202; color:white;margin-left:auto;margin-right:auto;">Actualizar</button>
+                    <button  onclick="ejecutar();" style="width:15rem;height:3rem; border-radius:12px;background-color:#020202; color:white;margin-left:auto;margin-right:auto;">Ejecutar</button>
                 </div> 
 
            <?php  

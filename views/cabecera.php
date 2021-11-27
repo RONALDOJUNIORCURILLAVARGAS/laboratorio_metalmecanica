@@ -11,6 +11,7 @@
         <li class="nav-item" >
           <a class="nav-link active" aria-current="page" href="../index.php">Inicio</a>
         </li>
+        <!--
         <li class="nav-item dropdown">
           <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Servicios
@@ -22,8 +23,9 @@
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
+-->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+          <a class="nav-link active" aria-current="page" href="./nosotros.php">Nosotros</a>
         </li>
       </ul>
       <form class="d-flex" name="form">
@@ -32,7 +34,10 @@
       <input type="hidden" name="nombrematerial">
       <input type="hidden" name="idherramienta">
       <input type="hidden" name="nombreherramienta">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+      <input type="hidden" name="valorejecucion">
+      <input type="hidden" name="idproyecto">
+      <input type="hidden" name="codigografico">
+       <!-- <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">-->
         <button class="btn btn-outline-light" type="submit" onclick="salir()">Salir</button>
       </form>
     </div>

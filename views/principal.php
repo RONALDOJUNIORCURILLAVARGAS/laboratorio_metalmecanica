@@ -22,7 +22,9 @@
 if(isset($_SESSION['nombre_herramienta_seleccionado'])){
  unset($_SESSION['nombre_herramienta_seleccionado']);
 }
-
+if(isset($_SESSION['grafico_material'])){
+  unset($_SESSION['grafico_material']);
+}
   
     
 ?>
@@ -54,6 +56,7 @@ if(isset($_SESSION['nombre_herramienta_seleccionado'])){
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
+      <!--
         <li class="nav-item dropdown">
           <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Servicios
@@ -65,8 +68,9 @@ if(isset($_SESSION['nombre_herramienta_seleccionado'])){
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
+        -->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+          <a class="nav-link active" aria-current="page" href="./nosotros.php">Nosotros</a>
         </li>
       </ul>
       <form class="d-flex" name="form">
@@ -151,6 +155,7 @@ if(isset($_SESSION['nombre_herramienta_seleccionado'])){
     </div>
     
 </div>
+<!--
     <?php foreach ($lista_usuario as $value) {?>
     <h2 ><?php echo $value['nombre'],' ',$value['apellido'] ;?></h2>
   
@@ -161,6 +166,6 @@ if(isset($_SESSION['nombre_herramienta_seleccionado'])){
     
     <?php } } ?>
 
-              
+    -->         
 </body>
 </html>
