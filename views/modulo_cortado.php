@@ -23,11 +23,11 @@
       if(isset($_SESSION['nombre_herramienta_seleccionado'])){
         $nombreherramientaseleccionada=$_SESSION['nombre_herramienta_seleccionado'];
       }
-
-
       if(isset($_SESSION['nombre_material_seleccionado'])){
           $nombrematerialseleccionado=$_SESSION['nombre_material_seleccionado'];
       }
+     
+
     //unset($_SESSION['estado']);
  }
  else{

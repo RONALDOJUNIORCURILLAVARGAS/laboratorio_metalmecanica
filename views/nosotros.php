@@ -93,7 +93,7 @@ if(isset($_SESSION['grafico_material'])){
                     <h2 style="width:100%;">Programador</h2>
                 </div>
 
-                <img style="width:150px;height:150px;" src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png"/>
+                <img style="width:150px;height:150px;" src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" />
                 <h4>Ronaldo Junior Curilla Vargas</h4>
                 <h5>2017008703@unfv.edu.pe</h5>
             </div>

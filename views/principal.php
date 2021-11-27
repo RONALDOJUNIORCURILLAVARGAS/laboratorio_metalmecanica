@@ -75,6 +75,7 @@ if(isset($_SESSION['grafico_material'])){
       </ul>
       <form class="d-flex" name="form">
       <input type="hidden" name="op">
+      <input type="hidden" name="idproyecto">
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
         <button class="btn btn-outline-light" type="submit" onclick="salir()">Salir</button>
       </form>
@@ -89,8 +90,9 @@ if(isset($_SESSION['grafico_material'])){
         <ul id="car_caj_p">
           <?php if(isset($lista_proyectos)){
                 foreach ($lista_proyectos as $value) {  
+
                     if($value['nombre_proyecto']=='Cortado de tuberia'){ ?>
-                     <li class="caja_projects" onclick="acceder_proyecto();" >
+                     <li class="caja_projects" onclick="acceder_proyecto(<?php echo $value['id_proyecto']; ?>);" >
                     <img src="../src/images/cortado.jpeg"    style="width:10rem; height:10rem"/>
                     <span class="title_project" > <?php echo $value['nombre_proyecto']; ?> </span>
                     </li>
@@ -102,23 +104,7 @@ if(isset($_SESSION['grafico_material'])){
                   </li> 
                 <?php 
                 }   } }  ?>
-              
-          <li class="caja_projects">
-          <img src="../src/images/diseño.jpeg"   style="width:10rem; height:10rem"/>
-          <span class="title_project">Diseño de proyectos</span>
-          </li>
-
-          <li class="caja_projects">
-            <img src="../src/images/soldadura.jpeg"   style="width:10rem; height:10rem"/>
-            <span class="title_project">Soldadura</span>
-          </li>
-
-
-
-          <li class="caja_projects">
-          <img src="../src/images/doblado.jpeg"   style="width:10rem; height:10rem"/>
-          <span class="title_project">Doblado de tuberia</span>
-          </li>
+         
 
         </ul>
       
@@ -127,7 +113,7 @@ if(isset($_SESSION['grafico_material'])){
 </div>
 <div class="videos" >
     <div class="videos_card">
-        <div id="head_card_vid"><span>¿Qué desea hacer?</span>
+        <div id="head_card_vid"><span>¿Desea ver otras cosas?</span>
       </div>
     <div id="carrusel_videos">
             <ul id="car_caj_v">

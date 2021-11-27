@@ -21,6 +21,29 @@ class graficoDAO {
     /*Retorna un estado de la ejecucion por default es 0 v null si no se ejecuto*/
     return $i;
     }
+    public function ListarGraficos(graficoBEAN $objgraficoBean) {
+        try{
+            $sql="SELECT * FROM grafico WHERE id_proyecto=$objgraficoBean->IDPROYECTO; ";
+            $objc=new conexionBD();
+            $cn=$objc->getConexionBD();
+            $rs=mysqli_query($cn,$sql);
+            $lista=array();
+            if($rs){       
+                while($fila=mysqli_fetch_assoc($rs)){
+                    $lista[]=$fila;
+                } 
+            }
+            else{
+                $lista=null;
+            }
+            mysqli_close($cn);   
+        }
+        catch(Exception $exc){
+        }
+        return $lista;
+    }
+
+
 }  
 
 
