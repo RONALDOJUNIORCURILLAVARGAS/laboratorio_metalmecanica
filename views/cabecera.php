@@ -28,6 +28,10 @@
       </ul>
       <form class="d-flex" name="form">
       <input type="hidden" name="op">
+      <input type="hidden" name="idmaterial">
+      <input type="hidden" name="nombrematerial">
+      <input type="hidden" name="idherramienta">
+      <input type="hidden" name="nombreherramienta">
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
         <button class="btn btn-outline-light" type="submit" onclick="salir()">Salir</button>
       </form>

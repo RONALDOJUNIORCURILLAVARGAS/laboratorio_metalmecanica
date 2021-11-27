@@ -12,7 +12,17 @@
  else{
   header('location:../');
  }
-   
+ if(isset($_SESSION['lista_dimensiones']))
+ {
+   unset($_SESSION['lista_dimensiones']);
+ }
+ if(isset($_SESSION['lista_configherramienta'])){
+ unset($_SESSION['lista_configherramienta']);
+}
+if(isset($_SESSION['nombre_herramienta_seleccionado'])){
+ unset($_SESSION['nombre_herramienta_seleccionado']);
+}
+
   
     
 ?>
