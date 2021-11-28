@@ -84,7 +84,7 @@ if(isset($_SESSION['grafico_material'])){
 </nav>
 <div class="proyectos" >
     <div class="proyectos_card">
-    <button type="button" class="btn btn-secondary" id="add_project">Nuevo proyecto</button>
+    <button type="button" onclick="registrar_proyecto();" class="btn btn-secondary" id="add_project">Nuevo proyecto</button>
     <div id="carrusel_project">
      
         <ul id="car_caj_p">

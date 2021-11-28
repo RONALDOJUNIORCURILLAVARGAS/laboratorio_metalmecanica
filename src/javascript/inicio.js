@@ -11,3 +11,9 @@ function acceder_proyecto(id_proyecto) {
     window.document.form.idproyecto.value=id_proyecto;
     window.document.form.submit();
 }
+function registrar_proyecto(){
+    window.document.form.action="../controllers/control_reg_proyecto.php";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.submit();
+}
