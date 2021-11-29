@@ -6,6 +6,8 @@ require_once '../models/DAO/graficoDAO.php';
 require_once '../models/BEAN/dimensionesBEAN.php';
 require_once '../models/DAO/dimensionesDAO.php';
 require_once '../models/BEAN/graficoBEAN.php';
+require_once '../models/BEAN/proyectoBEAN.php';
+require_once '../models/DAO/proyectoDAO.php';
 
 $objherramientaDAO = new herramientaDAO();
 $objmaterialDAO = new materialDAO();
@@ -18,14 +20,40 @@ $objdimensionesDAO = new dimensionesDAO();
 
 
 $op=$_POST['op'];
-$id_proyecto=$_POST['idproyecto'];
-echo $op.'El id es :  '.$id_proyecto;
 switch ($op) {
     case 1:
-        # code...
+        # Registrar nuevo proyecto
+        $nombreproyecto=$_POST['nombrenuevoproyecto'];
+       $lista_usuario=$_SESSION['lista_usuario'];
+       $idusuario='';
+       foreach ($lista_usuario as $value) {
+        $idusuario= $value['id'];
+       }
+       $objproyectoBEAN=new proyectoBEAN();
+       $objproyectoDAO= new proyectoDAO();
+       $objproyectoBEAN ->setNOMBRE($nombreproyecto);
+       $objproyectoBEAN ->setIDUSUARIO($idusuario);
+       $estado_ejecutar=$objproyectoDAO->RegistrarProyecto($objproyectoBEAN);
+       if($estado_ejecutar==1){
+           $listaproyecto=$objproyectoDAO->ListaridProyecto($objproyectoBEAN);
+           $idproyecto='';
+           foreach ($listaproyecto as $val) {
+                $idproyecto=$val['id_proyecto'];
+           }
+           $objgraficoBean->setIDPROYECTO($idproyecto);
+           $insertargrafico=$objgraficoDAO->generarGrafico( $objgraficoBean);
+            echo $nombreproyecto.':'.$idusuario.'el estado es :'.$idproyecto;
+       }
+       else{ 
+        header('location:../views/reg_new_project.php');
+       }
+        
+
         break;
     
     case 2:
+        
+        $id_proyecto=$_POST['idproyecto'];
         $lista=$objherramientaDAO->ListarHerramientas(); 
         $lista_material=$objmaterialDAO-> ListarMateriales();
 

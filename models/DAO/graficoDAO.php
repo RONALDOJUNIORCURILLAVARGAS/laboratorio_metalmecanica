@@ -43,9 +43,17 @@ class graficoDAO {
         return $lista;
     }
 
-
-}  
-
-
-
-?>
+    public function generarGrafico(graficoBEAN $objgraficoBean){
+        $i=0;
+        try{
+            $sql="INSERT INTO grafico(id_proyecto) VALUES ($objgraficoBean->IDPROYECTO);";
+            $objc=new conexionBD();
+            $cn=$objc->getConexionBD();
+            $i= mysqli_query($cn,$sql);
+            mysqli_close($cn);   
+        }
+    catch(Exception $exc){
+    }
+    return $i;
+    }
+}  ?>

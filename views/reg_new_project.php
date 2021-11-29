@@ -27,11 +27,11 @@
         </div>
         <div id="caja_registro">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="text" class="form-control" id="floatingInput" name="nombreproyecto" placeholder="name@example.com">
                 <label for="floatingInput">Nombre de proyecto</label>
             </div>
             <div id="btn_reg" class="text-center">
-                    <button id="btn_reg_proyecto" >Registrar</button>
+                    <button id="btn_reg_proyecto" onclick="registrarproyecto();">Registrar</button>
             </div>
         </div>
 

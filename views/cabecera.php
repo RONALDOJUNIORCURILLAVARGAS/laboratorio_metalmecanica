@@ -37,6 +37,7 @@
       <input type="hidden" name="valorejecucion">
       <input type="hidden" name="idproyecto">
       <input type="hidden" name="codigografico">
+      <input type="hidden" name="nombrenuevoproyecto">
        <!-- <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">-->
         <button class="btn btn-outline-light" type="submit" onclick="salir()">Salir</button>
       </form>
