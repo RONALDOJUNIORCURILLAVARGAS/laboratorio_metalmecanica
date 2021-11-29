@@ -38,6 +38,8 @@
       <input type="hidden" name="idproyecto">
       <input type="hidden" name="codigografico">
       <input type="hidden" name="nombrenuevoproyecto">
+      <input type="hidden" name="ejex">
+      <input type="hidden" name="ejey">
        <!-- <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">-->
         <button class="btn btn-outline-light" type="submit" onclick="salir()">Salir</button>
       </form>

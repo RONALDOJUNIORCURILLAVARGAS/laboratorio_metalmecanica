@@ -112,6 +112,38 @@
                                     echo $_SESSION['grafico_material'];
                                 }
                                 ?>
+<!--
+                                <div style="width: 500px;
+                                    height: 250px;
+                                    background-color: red;
+                                    display: flex;
+                                    position: absolute;
+                                    margin-left: 200px;">
+                                    <div  style="width: 250px;
+                                    height: 20px;
+                                    background-color: #777777;
+                                    margin-top: 115px; ">
+                                    </div>
+                                    <div style="width: 250px;
+                                        height: 250px;
+                                        background-color: none;
+                                        border-radius: 100%;">
+                                        <div style=" width: 250px;
+                                        height: 20px;
+                                        background-color:#777777;
+                                        transform: rotate(-90deg);
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        margin-top: 115px;
+                                        border-radius: 50px;
+                                        position:absolute;
+                                        left: 125px;
+                                        ">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            -->
                 </div>
             </div>
             <div align="center" >
@@ -196,7 +228,7 @@
                                     <td><input type="number" id="valor_config_herramienta" value="<?php echo $value['valor_configherramienta']; ?>"/></td>
                                     <td>
                                         <select class="btn btn-secondary " role="group" aria-labelledby="btnGroupDrop1">
-                                            <option class="dropdown-item" value="1"><?php echo $value['unidad__configherramienta'];?></option> 
+                                            <option class="dropdown-item" id="valor_unidad" value="<?php echo $value['unidad__configherramienta'];?>"><?php echo $value['unidad__configherramienta'];?></option> 
                                             <!-- <option class="dropdown-item" value="2">m</option> -->
                                         </select>
                                     </td>
