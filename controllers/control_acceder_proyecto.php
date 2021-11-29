@@ -54,18 +54,17 @@ switch ($op) {
             $_SESSION['lista_herramienta']=$lista;
             $_SESSION['lista_materiales']=$lista_material;
             $_SESSION['lista_proyectos']=$listaproyecto;
+            $_SESSION['id_proyecto']=$id_proyecto;
             header('location:../views/modulo_cortado.php');
        }
        else{ 
         header('location:../views/reg_new_project.php');
-       }
-        
-
+       }  
         break;
-    
-    case 2:
-        
+    case 2: 
+
         $id_proyecto=$_POST['idproyecto'];
+
         $lista=$objherramientaDAO->ListarHerramientas(); 
         $lista_material=$objmaterialDAO-> ListarMateriales();
 
@@ -79,7 +78,9 @@ switch ($op) {
         echo $codigo;
         $_SESSION['lista_herramienta']=$lista;
         $_SESSION['lista_materiales']=$lista_material;
+        $_SESSION['id_proyecto']=$id_proyecto;
         header('location:../views/modulo_cortado.php');
+
         break;
 }
 

@@ -7,6 +7,7 @@
     if(isset($_SESSION['lista_proyectos'])){
       $lista_proyectos=$_SESSION['lista_proyectos'];
     }
+    
 
     if(isset( $_SESSION['lista_herramienta'])){
         $lista_herramienta=$_SESSION['lista_herramienta'];
@@ -117,7 +118,7 @@
                  <hr  style="width: 80%; ">
             </div>
             <div id="btn_guardar_p" style="text-align:center;">
-                <button id ="btn_guardar" onclick="guardarproyecto(<?php if(isset($_SESSION['grafico_material'])){echo  '`'.$_SESSION['grafico_material'].'`';}else{ echo 1;} ?> , <?php   if(isset($_SESSION['lista_proyectos'])){ foreach ($lista_proyectos as $value) { echo $value['id_proyecto'];  }  } else {echo 0;} ?>);" style="width:15rem;height:5rem; border-radius:12px;background-color:#020202; color:white;margin-left:auto;margin-right:auto;">Guardar</button>
+<button id ="btn_guardar" onclick="guardarproyecto(<?php if(isset($_SESSION['grafico_material'])){echo  '`'.$_SESSION['grafico_material'].'`';}else{ echo 1;} ?> , <?php if(isset($_SESSION['id_proyecto'])){ echo $_SESSION['id_proyecto'];} else {echo 0;} ?>);" style="width:15rem;height:5rem; border-radius:12px;background-color:#020202; color:white;margin-left:auto;margin-right:auto;">Guardar</button>
             </div>
         </div>
         <div class="vl"></div>

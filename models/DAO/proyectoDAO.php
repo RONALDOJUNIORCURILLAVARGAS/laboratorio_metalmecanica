@@ -7,7 +7,7 @@ class proyectoDAO {
 
     public function ListarProyectos(proyectoBEAN $objproyectoBean) {
         try{
-            $sql="SELECT *FROM proyecto p INNER JOIN usuarios u ON u.id= p.id_proyecto WHERE u.id='$objproyectoBean->IDUSUARIO' ; ";
+            $sql="SELECT * FROM proyecto p INNER JOIN usuarios u ON u.id=p.id_usuario WHERE p.id_usuario =$objproyectoBean->IDUSUARIO;";
             $objc=new conexionBD();
             $cn=$objc->getConexionBD();
             $rs=mysqli_query($cn,$sql);

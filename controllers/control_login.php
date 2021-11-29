@@ -62,6 +62,20 @@ switch ($op) {
         case 3:
                 header('Location:../views/registrar.php');
                 break;
+        case 4:
+
+                $lista=$_SESSION['lista_usuario'];
+                $id_usuario='';
+                foreach ($lista as $value) {
+                        $id_usuario=$value['id'];
+                }
+                $objproyectoBEAN = new proyectoBEAN();
+                $objproyectoDAO  = new proyectoDAO();
+                $objproyectoBEAN ->setIDUSUARIO($id_usuario);
+                $lista_proyectos=$objproyectoDAO -> ListarProyectos($objproyectoBEAN); 
+                $_SESSION['lista_proyectos']= $lista_proyectos;
+                header('location:../views/principal.php');
+                break;
 }
 
     

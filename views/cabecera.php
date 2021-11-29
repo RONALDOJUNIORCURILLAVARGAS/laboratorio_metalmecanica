@@ -2,14 +2,14 @@
   <div class="container-fluid">
     <div style="width: 100px; height:20px;"></div>
     <img src="../src/images/icon.jpeg" width="20" height="20"/>
-    <a class="navbar-brand" href="../index.php"><h4 style="margin:0;">METALAB</h3></a>
+    <a class="navbar-brand" style="cursor:pointer;"  onclick="principal();"><h4 style="margin:0;">METALAB</h3></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item" >
-          <a class="nav-link active" aria-current="page" href="../index.php">Inicio</a>
+          <a class="nav-link active" aria-current="page" style="cursor:pointer;" onclick="principal();">Inicio</a>
         </li>
         <!--
         <li class="nav-item dropdown">

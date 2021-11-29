@@ -30,3 +30,9 @@ function registrarproyecto() {
         alert('Ingrese un nombre por favor')
     }
 }
+function  principal(){
+    window.document.form.action="../controllers/control_login.php";
+    window.document.form.method="POST";
+    window.document.form.op.value="4";
+    window.document.form.submit();
+}

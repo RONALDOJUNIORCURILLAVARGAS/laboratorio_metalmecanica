@@ -47,14 +47,14 @@ if(isset($_SESSION['grafico_material'])){
   <div class="container-fluid">
     <div style="width: 100px; height:20px;"></div>
     <img src="../src/images/icon.jpeg" width="20" height="20"/>
-    <a class="navbar-brand" href="#"><h4 style="margin:0;">METALAB</h3></a>
+    <a class="navbar-brand" style="cursor:pointer;" onclick="principal();"><h4 style="margin:0;">METALAB</h3></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link active" aria-current="page" style="cursor:pointer;" onclick="principal();">Inicio</a>
         </li>
       <!--
         <li class="nav-item dropdown">
@@ -89,21 +89,12 @@ if(isset($_SESSION['grafico_material'])){
      
         <ul id="car_caj_p">
           <?php if(isset($lista_proyectos)){
-                foreach ($lista_proyectos as $value) {  
-
-                    if($value['nombre_proyecto']=='Cortado de tuberia'){ ?>
+                foreach ($lista_proyectos as $value) {   ?>
                      <li class="caja_projects" onclick="acceder_proyecto(<?php echo $value['id_proyecto']; ?>);" >
                     <img src="../src/images/cortado.jpeg"    style="width:10rem; height:10rem"/>
                     <span class="title_project" > <?php echo $value['nombre_proyecto']; ?> </span>
-                    </li>
-                   <?php  }  
-                  else if($value['nombre_proyecto']=='Diseño de proyectos'){ ?>
-                  <li class="caja_projects">
-                  <img src="../src/images/diseño.jpeg"   style="width:10rem; height:10rem"/>
-                  <span class="title_project"> <?php echo $value['nombre_proyecto']; ?> </span>
-                  </li> 
-                <?php 
-                }   } }  ?>
+                    </li>    
+          <?php } }  ?>
          
 
         </ul>
