@@ -34,6 +34,7 @@ switch ($op) {
        $objproyectoBEAN ->setNOMBRE($nombreproyecto);
        $objproyectoBEAN ->setIDUSUARIO($idusuario);
        $estado_ejecutar=$objproyectoDAO->RegistrarProyecto($objproyectoBEAN);
+       $listaproyecto='';
        if($estado_ejecutar==1){
            $listaproyecto=$objproyectoDAO->ListaridProyecto($objproyectoBEAN);
            $idproyecto='';
@@ -41,8 +42,19 @@ switch ($op) {
                 $idproyecto=$val['id_proyecto'];
            }
            $objgraficoBean->setIDPROYECTO($idproyecto);
-           $insertargrafico=$objgraficoDAO->generarGrafico( $objgraficoBean);
-            echo $nombreproyecto.':'.$idusuario.'el estado es :'.$idproyecto;
+           $insertargrafico=$objgraficoDAO->generarGrafico($objgraficoBean);
+           $lista_grafico=$objgraficoDAO ->ListarGraficos($objgraficoBean);
+           $codigo="";
+            foreach ($lista_grafico as $value) {
+                $codigo=$value['codigo_grafico'];
+            }
+            $_SESSION['grafico_material']=$codigo;
+            $lista=$objherramientaDAO->ListarHerramientas(); 
+            $lista_material=$objmaterialDAO-> ListarMateriales();
+            $_SESSION['lista_herramienta']=$lista;
+            $_SESSION['lista_materiales']=$lista_material;
+            $_SESSION['lista_proyectos']=$listaproyecto;
+            header('location:../views/modulo_cortado.php');
        }
        else{ 
         header('location:../views/reg_new_project.php');
