@@ -106,6 +106,15 @@ if(isset($_SESSION['grafico_material'])){
                 <h4>Jorge manuel arevalo luján</h4>
                 <h5>2017001787@unfv.edu.pe</h5>
             </div>
+            <div id="vision" style="width:50%;height:350px;background-color:none;padding-left:5rem;padding-right:5rem;">
+                <div style="width:100%;height:50px;">
+                    <h2  style="width:100%;">Documentador</h2>
+                </div>
+                <img style="width:150px;height:150px;" src=" http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" />
+                <br>
+                <h4>Rodrigo Junnior Garro Lugo</h4>
+                <h5>@unfv.edu.pe</h5>
+            </div>
         </div>
        
     </div>  
