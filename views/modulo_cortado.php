@@ -100,7 +100,7 @@
         <!-- SIMULADOR SECCION -->
         <div class="simulador">
             <div id="title_simulador">
-                <span>Corte de tubería</span>
+                <span>Gráfico</span>
             </div>
             <div align="center" >
                  <hr  style="width: 80%; ">
