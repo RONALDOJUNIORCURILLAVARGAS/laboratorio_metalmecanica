@@ -36,6 +36,7 @@ switch ($op) {
        $estado_ejecutar=$objproyectoDAO->RegistrarProyecto($objproyectoBEAN);
        $listaproyecto='';
        if($estado_ejecutar==1){
+           
            $listaproyecto=$objproyectoDAO->ListaridProyecto($objproyectoBEAN);
            $idproyecto='';
            foreach ($listaproyecto as $val) {
